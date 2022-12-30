@@ -1,0 +1,44 @@
+{
+  "name": "hasura_built_in_node",
+  "version": "1.0.0",
+  "description": "Hasura + Node.js構成のキャッチアップリポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "graphql-codegen --config server-codegen.ts",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --exit-child --respawn src/main.ts",
+    "start": "ts-node src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuichi-Kadota/hasura_built_in_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yuichi-Kadota/hasura_built_in_node/issues"
+  },
+  "homepage": "https://github.com/Yuichi-Kadota/hasura_built_in_node#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.1.0",
+    "graphql-yoga": "^3.1.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.16.2",
+    "@graphql-codegen/client-preset": "^1.2.4",
+    "@graphql-codegen/typescript": "^2.8.6",
+    "@graphql-codegen/typescript-resolvers": "^2.7.11",
+    "@tsconfig/node18-strictest": "^1.0.0",
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.30.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
